@@ -6,14 +6,13 @@ const TodoForm = ({ addTodo }) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         addTodo(title)
-        setTitle('') // Reset title-nya
+        setTitle('')
     }
   
     const handleChangeTitle = (event) => {
       setTitle(event.target.value)
     }
     
-    // Periksa apakah function "handleChangeTitle" berfungsi
     console.log(title)
   
     return (
@@ -27,7 +26,7 @@ const TodoForm = ({ addTodo }) => {
             type="text"
             placeholder="Add your Todo"
             style={styles.formInput}
-            // Tambahkan event handler "onChange"
+
             onChange={(event) => {
               handleChangeTitle(event)
             }} value={title}

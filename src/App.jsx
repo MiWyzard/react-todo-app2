@@ -23,7 +23,6 @@ function App() {
 
   console.log(todos)
 
-  // Definisikan toggleCompleted di sini
   const toggleCompleted = (todoId) => {
     console.log(todoId)
   }
@@ -46,12 +45,9 @@ function App() {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>My Todo List</h1>
-      {/* Teruskan function addTodo sebagai props */}
       <TodoForm addTodo={addTodo} /> 
       <Todos
         todos={todos}
-        toggleCompleted={toggleCompleted}
-        deleteTodo={deleteTodo}
       />
     </div>
   )
