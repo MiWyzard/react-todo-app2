@@ -22,10 +22,16 @@ function App() {
 
   console.log(todos)
 
+  // Definisikan toggleCompleted di sini
+  const toggleCompleted = (todoId) => {
+    console.log(todoId)
+  }
+
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>My Todo List</h1>
-      <Todos todos={todos} />
+      {/* Teruskan function toggleCompleted ke component Todos */}
+      <Todos todos={todos} toggleCompleted={toggleCompleted} />
     </div>
   )
 }
