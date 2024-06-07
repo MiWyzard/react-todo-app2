@@ -1,8 +1,12 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "App.jsx",
   "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
